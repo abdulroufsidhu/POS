@@ -13,7 +13,7 @@ class GPU : public Item{
 		RAM* vRAM;
 		
 	public:
-		GPU(char* company, RAM* vRAM, char* vendor, char* modal = new char('\0'));
+		GPU(char* company, RAM* vRAM, char* vendor, char* modal = new char('\0'), double* unitPrice = 0.0, double* unitDiscount = 0.0, int* quantity = 1);
 
 	private:
 		void setDetailsToItemName();

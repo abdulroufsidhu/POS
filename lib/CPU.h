@@ -14,7 +14,7 @@ class CPU : public Item {
 		char* cache;
 		
 	public:
-		CPU(char* company, char* series, char* generation,char* frequency, char* cache, char* modal = new char('\0'));
+		CPU(char* company, char* series, char* generation,char* frequency, char* cache, char* modal = new char('\0'), double* unitPrice = 0.0, double* unitDiscount = 0.0, int* quantity = 1);
 	
 	private:
 		void setDetailsToItemName();
